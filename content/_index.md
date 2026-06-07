@@ -6,17 +6,17 @@ type: landing
 sections:
   - block: hero
     content:
-      eyebrow: Anchorage, AK · Activity Companion
-      title: "Your [vibe] needs a [partner]."
-      text: VYV connects you with a skilled, personality-driven local companion for the activities you've been putting off. Swim, skate, hike, dance — whatever makes you feel like you again.
+      eyebrow: Hello · Hola · Anchorage, AK
+      title: "Your [vibe] deserves a real [partner]."
+      text: VYV is one person — me, Oscar — available, invested, and good at this. I built it because I kept seeing the same gap&#58; people who want to move, reconnect, or try something new, but no one to do it with. If that's you, let's fix that.
       primary_action:
         text: Let's connect
         url: "#connect"
         icon: heart
         style: gradient
       secondary_action:
-        text: See activities
-        url: "#activities"
+        text: How it works
+        url: "#how-it-works"
         icon: arrow-down
         style: ghost
     design:
