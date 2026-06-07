@@ -225,7 +225,7 @@ sections:
       items:
         - question: What exactly is VYV?
           answer: |
-            VYV (Vibe & Vamos) is a solo-operated companionship and activity service based in Anchorage, AK. You get a real person — skilled, fun, non-weird — to do activities with you. Think of it as having a socially fluent friend who's actually available.
+            VYV stands for Vibe & Vamos — vibes and let's go. It's me — Oscar, or Oki if you knew me as a kid (childhood nickname, earned fair and square). I'm a [change consultant](https://hello.okiave.com) and [visual artist](https://okiave.com) who built this because I kept seeing the same gap: people wanting to get active and connected, but no reliable, interesting person to do it with. So I became that person. Activity companion. Presence holder. Someone who shows up. Based in Anchorage, AK.
         - question: Is this a dating service?
           answer: |
             No. This is an activity companion service. VYV is about movement, genuine connection, and having a good time doing things — not romance. If that's what you're looking for, Tinder exists.
@@ -244,8 +244,8 @@ sections:
 
   - block: cta-card
     content:
-      title: "Stop putting it off. ¡Vamos!"
-      text: Anchorage is too good to experience alone. Let's get you out there.
+      title: "I read every form myself. ¡Vamos!"
+      text: Fill it out and I'll be in touch within 24 hours. No pitch. Just a real conversation about what you're looking for.
       button:
         text: Connect now →
         url: "#connect"
