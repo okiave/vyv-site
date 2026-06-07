@@ -4,8 +4,8 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Website name (set in params.yaml under hugoblox.branding.name)
-title: ''
-baseURL: 'https://example.com/' # Website URL
+title: 'Vibe & Vamos'
+baseURL: 'https://vyv.okiave.com/'
 
 ############################
 ## PAGE OPTIONS
@@ -75,6 +75,9 @@ taxonomies:
   author: authors
 markup:
   _merge: deep
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     lineNos: false
 security:

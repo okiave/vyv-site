@@ -12,31 +12,14 @@ hugoblox:
   # Site-level branding (for people/profiles, use the author system in content/authors/)
   # ────────────────────────────────────────────────────────────────────────────
   identity:
-    # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Beacon"
-    # Legal entity for copyright notices (defaults to name if not set)
-    organization: ""
-    # Schema.org type for structured data
-    type: organization # person | organization | local_business
-    # Short tagline displayed on your site
-    tagline: "The customer feedback platform for product teams."
-    # Site meta description for search engines and social sharing
-    description: "Beacon captures customer feedback from every channel — Slack,
-      email, support, in-app — and uses AI to surface what matters. Turn customer
-      noise into your roadmap."
-    # Social accounts (used for meta tags like Twitter Cards)
+    name: "Vibe & Vamos"
+    organization: "Vibe & Vamos"
+    type: local_business
+    tagline: "Your person for doing the things you keep putting off."
+    description: "VYV is a solo-operated activity companion service based in Anchorage, AK. Swim, skate, hike, dance — whatever gets you moving, we do it together."
     social:
-      twitter: "GoOwnable" # Twitter/X handle for Twitter Cards (without @)
-      # Site-wide social links (rendered in footer, etc.)
-      links:
-        - icon: brands/x
-          url: https://x.com/GoOwnable
-        - icon: brands/github
-          url: https://github.com/HugoBlox/kit
-        - icon: brands/discord
-          url: https://discord.gg/z8wNYzb
-        - icon: brands/linkedin
-          url: https://linkedin.com/company/example
+      twitter: ""
+      links: []
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -49,9 +32,9 @@ hugoblox:
     pack: "default"
     # Optional: Override theme pack colors
     colors:
-      primary: "" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
-      secondary: ""
-      neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
+      primary: "#f04e6e"
+      secondary: "#14b8a6"
+      neutral: ""
     # Optional: Mode-specific color overrides
     colors_light: {}
     colors_dark: {}
@@ -111,9 +94,9 @@ hugoblox:
     language_switcher: true
     # Call-to-action button
     cta:
-      enable: false
-      text: ""
-      url: ""
+      enable: true
+      text: "Let's connect"
+      url: "/#connect"
 
   # ────────────────────────────────────────────────────────────────────────────
   # FOOTER
@@ -138,13 +121,12 @@ hugoblox:
   # Legal notices and licensing
   # ────────────────────────────────────────────────────────────────────────────
   copyright:
-    # Copyright notice - supports {year}, {name}, {license} placeholders
-    notice: "© {year} {name}."
+    notice: "© {year} {name}. Anchorage, AK."
     license:
-      type: custom # cc | custom
+      type: custom
       allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
+      share_alike: false
+      allow_commercial: true
 
   # ────────────────────────────────────────────────────────────────────────────
   # SEO
