@@ -74,31 +74,31 @@ sections:
       items:
         - name: Swimming
           icon: sun
-          description: Open lanes at the pool or guided open-water sessions. Good for the body, great for the mind.
+          description: Open lanes at the pool or guided open-water sessions. Good for the body, great for the mind too — can feel meditative.
         - name: Roller Skating
           icon: bolt
           description: Rink nights, trail skating, or just figuring out how to stay upright. All skill levels welcome.
         - name: Yoga
           icon: sparkles
-          description: Studio sessions or outdoor flows. Bring whatever version of yourself showed up today.
+          description: "Studio sessions or outdoor flows. Bring whatever version of yourself showed up today. Let's get to know what practice and studio aligns with you."
         - name: Rock Climbing
           icon: fire
-          description: Bouldering or top-rope — we'll spot you, literally and figuratively.
+          description: "Bouldering or top-rope (within limits) — I'll spot you literally and figuratively."
         - name: Biking
           icon: map
-          description: Anchorage's trail system is genuinely spectacular. Let's ride it together.
+          description: "Anchorage's trail system is spectacular. Let's ride it together or I can teach you basic maintenance at <a href=\"https://www.offthechainak.org/wordpress/\" target=\"_blank\" rel=\"noopener\">Off the Chain Bike CoOp</a> where I volunteer."
         - name: Dancing
           icon: musical-note
-          description: Salsa, two-step, freestyle kitchen dancing — the point is to move, not to be perfect.
+          description: "Salsa, two-step, contra or just freestyle kitchen dancing — the point is to move, not to be perfect."
         - name: Visual Arts
           icon: paint-brush
-          description: Pottery, sketching, painting — making things is good for the soul. We'll make things.
-        - name: Music
+          description: "Origami, embroidery, sketching, photography — making things is good for the soul. We'll make creativity time a ritual."
+        - name: Thrifting
           icon: star
-          description: Learning something new, practicing together, or just jamming. No performance required.
+          description: "Let's explore your sense of style and expression and don the outfit out for an event or gathering."
         - name: Hiking
           icon: flag
-          description: Chugach trails from chill to gnarly. We go at your pace.
+          description: "Chugach trails from chill to gnarly. We go at your pace. Mountain runners need not apply."
     design:
       layout: bento
       css_class: "bg-gray-50 dark:bg-gray-900/50"
@@ -107,27 +107,27 @@ sections:
     id: who
     content:
       items:
-        - title: "New somewhere. I know that feeling."
-          text: Anchorage is spectacular and surprisingly hard to break into. I built VYV partly because I've been that person — new to a place, wanting to get out and do things, but not knowing anyone who was actually free. That gap doesn't have to be yours.
+        - title: "Too much screen time? I know that feeling."
+          text: Anchorage is spectacular and surprisingly hard to break into, so screen time becomes the default. I built VYV partly because I've been that person — wanting to get out and do things, but not knowing anyone who was actually free. That gap doesn't have to be yours.
           feature_icon: check
           features:
             - "Local knowledge, genuine enthusiasm"
             - "One-time or recurring — your call"
             - "Activities you'd actually pick yourself"
-          image: makers-shipping.jpg
+          image: persona-remote.jpg
           button:
             text: Let's connect
             url: "#connect"
         - title: "Life shifted. Your rhythm can too."
-          text: Transitions have a way of clearing the calendar without asking. VYV isn't therapy and it isn't a fix — it's someone reliable to move alongside you. I show up to hold space through presence, for what's already seeking to emerge. Like a water lily breaking the surface&#58; you just needed the right conditions.
+          text: Transitions have a way of clearing the calendar without asking. VYV isn't therapy and it isn't a fix — it's someone reliable to move alongside you. I show up to hold space with presence for what's already seeking to emerge through a process of companionship. Like a water lily just beneath the surface&#58; you need the right conditions to breakthrough.
           feature_icon: heart
           features:
             - "No judgment, no pressure, no weird vibes"
             - "Consistent availability around your schedule"
             - "Someone who actually shows up"
-          image: teams-collaboration.jpg
+          image: persona-transition.jpg
           button:
-            text: Tell us your situation
+            text: Tell me your situation
             url: "#connect"
     design:
       css_class: "bg-gray-100 dark:bg-gray-900"
@@ -190,7 +190,7 @@ sections:
               <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.875rem;"><input type="checkbox" name="activity" value="Biking" /> Biking</label>
               <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.875rem;"><input type="checkbox" name="activity" value="Dancing" /> Dancing</label>
               <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.875rem;"><input type="checkbox" name="activity" value="Visual arts" /> Visual arts</label>
-              <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.875rem;"><input type="checkbox" name="activity" value="Music" /> Music</label>
+              <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.875rem;"><input type="checkbox" name="activity" value="Thrifting" /> Thrifting</label>
               <label style="display:flex; align-items:center; gap:0.5rem; font-size:0.875rem;"><input type="checkbox" name="activity" value="Hiking" /> Hiking</label>
             </div>
           </div>
@@ -225,27 +225,27 @@ sections:
       items:
         - question: What exactly is VYV?
           answer: |
-            VYV stands for Vibe & Vamos — vibes and let's go. It's me — Oscar, or Oki if you knew me as a kid (childhood nickname, earned fair and square). I'm a [change consultant](https://hello.okiave.com) and [visual artist](https://okiave.com) who built this because I kept seeing the same gap: people wanting to get active and connected, but no reliable, interesting person to do it with. So I became that person. Activity companion. Presence holder. Someone who shows up. Based in Anchorage, AK.
+            VYV stands for Vibe & Vamos — vibes and let's go. It's me — Oscar, or Oki if you've gotten to know me as a kid — childhood nickname, earned from a spirited sense of play. I'm a [change consultant](https://hello.okiave.com) and [visual artist](https://okiave.com) who built this because I kept seeing the same gap: people wanting to get active and connected, but no reliable, interesting person to do it with. So I became that person. Activity companion. Presence holder. Someone who shows up. Currently based in Anchorage, AK and branching out to Austin, TX area.
         - question: Is this a dating service?
           answer: |
-            No. This is an activity companion service. VYV is about movement, genuine connection, and having a good time doing things — not romance. If that's what you're looking for, Tinder exists.
+            No. This is an activity companion service. VYV is about movement, genuine connection, and having a good time doing things — not romance. If that's what you're looking for, you've got Tinder and other platforms to explore.
         - question: How does pricing work?
           answer: |
-            Rates are based on activity type, duration, and scheduling. Use the form to connect and we'll work out what makes sense for your situation. No rigid packages, no surprise fees.
+            Currently, rates are based on activity type. Use the form above to connect and we'll work out what makes sense for your situation. No rigid packages, no surprise fees.
         - question: What if I've never done the activity before?
           answer: |
-            That's kind of the point. Beginners are welcome — often preferred, honestly. VYV is about trying things and getting moving, not performing expertise.
+            That's kind of the point. We're all beginners at something in life. VYV is about trying things and getting moving, not performing expertise. Think of it as a gateway to nurture a new hobby, skill or habit you want to ingrain.
         - question: Where in Anchorage do you operate?
           answer: |
-            Most activities happen within Anchorage proper — Midtown, South Addition, the Coastal Trail area. Some hiking goes into the Chugach. We work out logistics together after you connect.
+            Most activities happen within Anchorage proper — Midtown, South Addition and the Coastal Trail area. Photo walks and hiking experiences go as far as Turnagain and Palmer, AK.
         - question: How quickly will you follow up?
           answer: |
-            Within 24 hours on weekdays. If you submit over the weekend, expect a Monday reply. No auto-responder — a real human reads every form.
+            Within 24 hours on weekdays. If you submit over the weekend, expect a Monday reply. No auto-responder — I read every form.
 
   - block: cta-card
     content:
-      title: "I read every form myself. ¡Vamos!"
-      text: Fill it out and I'll be in touch within 24 hours. No pitch. Just a real conversation about what you're looking for.
+      title: "Wanna see if we vibe?"
+      text: Fill out the form using the button below and I'll respond within 24 hours to set up a time for a remote meetup. No pitch. Just a real conversation about what you're looking for.
       button:
         text: Connect now →
         url: "#connect"

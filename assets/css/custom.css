@@ -23,3 +23,32 @@ body::after {
 section {
   isolation: isolate;
 }
+
+/* ── Form field text color ──────────────────────────────────────────────────
+   Deep gray — readable without the harshness of pure black.
+   ─────────────────────────────────────────────────────────────────────────── */
+form input,
+form select,
+form textarea {
+  color: #374151 !important;
+}
+
+/* ── Mobile spacing ─────────────────────────────────────────────────────────
+   Trim the generous section gaps on small screens — 2/3 reduction above
+   How VYV Works, Activities, Who It's For, and FAQ.
+   ─────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  #how-it-works {
+    padding-top: 2rem !important;
+  }
+  #activities {
+    padding-top: 2rem !important;
+  }
+  #who {
+    padding-top: 2rem !important;
+  }
+  #faq {
+    padding-top: 2rem !important;
+    padding-bottom: 4rem !important;
+  }
+}
