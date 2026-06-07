@@ -107,23 +107,23 @@ sections:
     id: who
     content:
       items:
-        - title: New in town or remote-working solo?
-          text: Anchorage is spectacular and surprisingly hard to break into socially. VYV gives you a knowledgeable local who's excited to get out with you — no awkward networking, no tour-bus energy.
+        - title: "New somewhere. I know that feeling."
+          text: Anchorage is spectacular and surprisingly hard to break into. I built VYV partly because I've been that person — new to a place, wanting to get out and do things, but not knowing anyone who was actually free. That gap doesn't have to be yours.
           feature_icon: check
           features:
             - "Local knowledge, genuine enthusiasm"
             - "One-time or recurring — your call"
-            - "Activities you'd actually choose yourself"
+            - "Activities you'd actually pick yourself"
           image: makers-shipping.jpg
           button:
             text: Let's connect
             url: "#connect"
-        - title: Life changed. Your social life can too.
-          text: Divorce, new co-parenting schedule, empty nest — transitions leave gaps. VYV is a low-pressure way to rebuild momentum without pretending everything's fine or starting from zero alone.
+        - title: "Life shifted. Your rhythm can too."
+          text: Transitions have a way of clearing the calendar without asking. VYV isn't therapy and it isn't a fix — it's someone reliable to move alongside you. I show up to hold space through presence, for what's already seeking to emerge. Like a water lily breaking the surface&#58; you just needed the right conditions.
           feature_icon: heart
           features:
             - "No judgment, no pressure, no weird vibes"
-            - "Consistent availability built around your schedule"
+            - "Consistent availability around your schedule"
             - "Someone who actually shows up"
           image: teams-collaboration.jpg
           button:
