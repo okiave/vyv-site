@@ -223,9 +223,9 @@ sections:
       title: "Questions? Fair."
       subtitle: Here's what people usually ask.
       items:
-        - question: What exactly is VYV?
+        - question: What Exactly is VYV?
           answer: |
-            VYV stands for Vibe & Vamos — vibes and let's go. It's me — Oscar, or Oki if you've gotten to know me as a kid — childhood nickname, earned from a spirited sense of play. I'm a [change consultant](https://hello.okiave.com) and [visual artist](https://okiave.com) who built this because I kept seeing the same gap: people wanting to get active and connected, but no reliable, interesting person to do it with. So I became that person. Activity companion. Presence holder. Someone who shows up. Currently based in Anchorage, AK and branching out to Austin, TX area.
+            VYV stands for Vibe & Vamos — vibes and let's go. It's me — Oscar or Oki, if you've gotten to know me and my spirited sense of play disposition. I'm a change management consultant and visual artist who built this because I kept seeing the same gap: people wanting to get active and connected, but no reliable, interesting person to do it with. So I became that person. Activity companion. Presence holder. Someone who shows up. I'm currently based in Anchorage, AK and branching out to Austin, TX area.
         - question: Is this a dating service?
           answer: |
             No. This is an activity companion service. VYV is about movement, genuine connection, and having a good time doing things — not romance. If that's what you're looking for, you've got Tinder and other platforms to explore.
@@ -234,7 +234,7 @@ sections:
             Currently, rates are based on activity type. Use the form above to connect and we'll work out what makes sense for your situation. No rigid packages, no surprise fees.
         - question: What if I've never done the activity before?
           answer: |
-            That's kind of the point. We're all beginners at something in life. VYV is about trying things and getting moving, not performing expertise. Think of it as a gateway to nurture a new hobby, skill or habit you want to ingrain.
+            That's kind of the point. We're all beginners at something in life. VYV is about trying things and getting moving, not performing expertise. Think of it as a way to nurture a new hobby, skill or habit you want to practice.
         - question: Where in Anchorage do you operate?
           answer: |
             Most activities happen within Anchorage proper — Midtown, South Addition and the Coastal Trail area. Photo walks and hiking experiences go as far as Turnagain and Palmer, AK.
