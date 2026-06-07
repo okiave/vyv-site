@@ -48,17 +48,17 @@ sections:
   - block: steps
     id: how-it-works
     content:
-      title: How VYV works
+      title: How VyV Works
       text: Simple. Low-stakes. Actually fun.
       items:
-        - title: Tell us what you're into
-          text: Fill out the quick form — activities, availability, what you're working through. No essay required.
+        - title: "Tell Oscar what you're into."
+          text: Fill outy the quick form -- activities, availability, what you're working through. No essay required.
           icon: pencil-square
         - title: We vibe-check
-          text: A real human follows up (that's me, hi). We figure out what fits, when, and how.
+          text: I follow up with you by email for remote meeting where we where we figure out what firts, when, and how.
           icon: chat-bubble-left-right
-        - title: Show up and do the thing
-          text: Meet your companion. Move your body. Feel good. That's the whole plan.
+        - title: Meet up
+          text: "Based on our conversation we'll get togwether to share in an activity that feels good. That's the whole plan."
           icon: check-badge
     design:
       layout: horizontal
