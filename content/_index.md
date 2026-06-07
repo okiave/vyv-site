@@ -86,7 +86,7 @@ sections:
           description: "Bouldering or top-rope (within limits) — I'll spot you literally and figuratively."
         - name: Biking
           icon: map
-          description: "Anchorage's trail system is spectacular. Let's ride it together or I can teach you basic maintenance at <a href=\"https://www.offthechainak.org/wordpress/\" target=\"_blank\" rel=\"noopener\">Off the Chain Bike CoOp</a> where I volunteer."
+          description: "Anchorage's trail system is spectacular. Let's ride it together or I can teach you basic maintenance at [Off the Chain Bike CoOp](https://www.offthechainak.org/wordpress/) where I volunteer."
         - name: Dancing
           icon: musical-note
           description: "Salsa, two-step, contra or just freestyle kitchen dancing — the point is to move, not to be perfect."
@@ -225,7 +225,7 @@ sections:
       items:
         - question: What Exactly is VYV?
           answer: |
-            VYV stands for Vibe & Vamos — vibes and let's go. It's me — Oscar or Oki, if you've gotten to know me and my spirited sense of play disposition. I'm a change management consultant and visual artist who built this because I kept seeing the same gap: people wanting to get active and connected, but no reliable, interesting person to do it with. So I became that person. Activity companion. Presence holder. Someone who shows up. I'm currently based in Anchorage, AK and branching out to Austin, TX area.
+            VYV stands for Vibe & Vamos — vibes and let's go. It's me — Oscar or Oki, if you've gotten to know me and my spirited sense of play disposition. I'm a [change management consultant](https://hello.okiave.com) and [visual artist](https://okiave.com) who built this because I kept seeing the same gap: people wanting to get active and connected, but no reliable, interesting person to do it with. So I became that person. Activity companion. Presence holder. Someone who shows up. I'm currently based in Anchorage, AK and branching out to Austin, TX area.
         - question: Is this a dating service?
           answer: |
             No. This is an activity companion service. VYV is about movement, genuine connection, and having a good time doing things — not romance. If that's what you're looking for, you've got Tinder and other platforms to explore.
