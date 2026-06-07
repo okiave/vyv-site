@@ -86,7 +86,7 @@ sections:
           description: "Bouldering or top-rope (within limits) — I'll spot you literally and figuratively."
         - name: Biking
           icon: map
-          description: "Anchorage's trail system is spectacular. Let's ride it together or I can teach you basic maintenance at [Off the Chain Bike CoOp](https://www.offthechainak.org/wordpress/) where I volunteer."
+          description: "Anchorage's trail system is spectacular. Let's ride it together or I can teach you basic maintenance at <a href=\"https://www.offthechainak.org/wordpress/\" target=\"_blank\" rel=\"noopener\">Off the Chain Bike CoOp</a> where I volunteer."
         - name: Dancing
           icon: musical-note
           description: "Salsa, two-step, contra or just freestyle kitchen dancing — the point is to move, not to be perfect."

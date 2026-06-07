@@ -24,6 +24,18 @@ section {
   isolation: isolate;
 }
 
+/* ── Activity card links ────────────────────────────────────────────────────
+   Match the theme's prose link color so raw HTML anchors in feature card
+   descriptions look identical to FAQ/markdown links.
+   ─────────────────────────────────────────────────────────────────────────── */
+#activities a {
+  color: #f04e6e;
+  text-decoration: underline;
+}
+#activities a:hover {
+  opacity: 0.8;
+}
+
 /* ── Form field text color ──────────────────────────────────────────────────
    Deep gray — readable without the harshness of pure black.
    ─────────────────────────────────────────────────────────────────────────── */
