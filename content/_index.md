@@ -27,10 +27,10 @@ sections:
       section_break:
         fade_bottom: "#101828"
       background:
-        color: "#1a0a2e"
+        color: "#0d0816"
         gradient:
           type: radial
-          start: "rgba(240,78,110,0.45)"
+          start: "rgba(100,45,150,0.55)"
           end: "transparent"
           position: "50% -10%"
           shape: ellipse

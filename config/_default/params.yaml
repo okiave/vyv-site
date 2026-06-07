@@ -33,7 +33,7 @@ hugoblox:
     # Optional: Override theme pack colors
     colors:
       primary: "#f04e6e"
-      secondary: "#14b8a6"
+      secondary: "#7a3a9a"
       neutral: ""
     # Optional: Mode-specific color overrides
     colors_light: {}
