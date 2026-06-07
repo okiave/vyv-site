@@ -52,13 +52,13 @@ sections:
       text: Simple. Low-stakes. Actually fun.
       items:
         - title: "Tell Oscar what you're into."
-          text: Fill outy the quick form -- activities, availability, what you're working through. No essay required.
+          text: Fill out the quick form — activities, availability, what you're working through. No essay required.
           icon: pencil-square
         - title: We vibe-check
-          text: I follow up with you by email for remote meeting where we where we figure out what firts, when, and how.
+          text: I follow up with you by email for a remote meeting where we figure out what fits, when, and how.
           icon: chat-bubble-left-right
         - title: Meet up
-          text: "Based on our conversation we'll get togwether to share in an activity that feels good. That's the whole plan."
+          text: "Based on our conversation we'll get together to share in an activity that feels good. That's the whole plan."
           icon: check-badge
     design:
       layout: horizontal
