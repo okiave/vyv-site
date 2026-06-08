@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" role="img" aria-label="VYV animated mark">
+  <title>VYV</title>
+  <defs>
+    <!-- Violet → coral gradient, spans the full width in user space -->
+    <linearGradient id="gr" x1="0" y1="30" x2="200" y2="30" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#7a3a9a"/>
+      <stop offset="100%" stop-color="#f04e6e"/>
+    </linearGradient>
+
+    <!-- Clip waves to the visible canvas -->
+    <clipPath id="cp">
+      <rect width="200" height="60"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#cp)">
+
+    <!--
+      TOP WAVE — also serves as the single wave once the bottom fades.
+      Path extends from x=-80 to x=280 (one extra wavelength on each side)
+      so the scroll loop is invisible. Wavelength = 80px, amplitude = ±7px,
+      center y = 22.
+    -->
+    <path id="wt"
+      d="M -80 22 C -64.8 15 -55.2 15 -40 22
+         C -24.8 29 -15.2 29   0 22
+         C  15.2 15  24.8 15  40 22
+         C  55.2 29  64.8 29  80 22
+         C  95.2 15 104.8 15 120 22
+         C 135.2 29 144.8 29 160 22
+         C 175.2 15 184.8 15 200 22
+         C 215.2 29 224.8 29 240 22
+         C 255.2 15 264.8 15 280 22"
+      fill="none" stroke="url(#gr)" stroke-width="2.5" stroke-linecap="round"
+      opacity="1">
+
+      <!-- Continuous scroll: one wavelength over 1.4s -->
+      <animateTransform attributeName="transform"
+        type="translate" from="0,0" to="-80,0"
+        dur="1.4s" repeatCount="indefinite"/>
+
+      <!--
+        Visibility cycle (13s):
+        0.0–1.17s  visible   (two-wave Aquarius phase)
+        1.17–1.56s fade out  (wave slows into VyV)
+        1.56–12.6s hidden    (VyV is shown)
+        12.6–13s   fade in   (water returns)
+      -->
+      <animate attributeName="opacity"
+        keyTimes="0; 0.09; 0.12; 0.97; 1"
+        values="1; 1; 0; 0; 1"
+        dur="13s" calcMode="linear" repeatCount="indefinite"/>
+    </path>
+
+    <!--
+      BOTTOM WAVE — second line of the Aquarius ♒ symbol.
+      Same wave shape, center y = 42. Slightly slower scroll (1.7s)
+      for a subtle depth/parallax feel between the two lines.
+    -->
+    <path id="wb"
+      d="M -80 42 C -64.8 35 -55.2 35 -40 42
+         C -24.8 49 -15.2 49   0 42
+         C  15.2 35  24.8 35  40 42
+         C  55.2 49  64.8 49  80 42
+         C  95.2 35 104.8 35 120 42
+         C 135.2 49 144.8 49 160 42
+         C 175.2 35 184.8 35 200 42
+         C 215.2 49 224.8 49 240 42
+         C 255.2 35 264.8 35 280 42"
+      fill="none" stroke="url(#gr)" stroke-width="2.5" stroke-linecap="round"
+      opacity="1">
+
+      <!-- Slightly slower scroll for depth -->
+      <animateTransform attributeName="transform"
+        type="translate" from="0,0" to="-80,0"
+        dur="1.7s" repeatCount="indefinite"/>
+
+      <!--
+        Visibility cycle (13s):
+        0.0–0.39s  visible   (Aquarius both lines)
+        0.39–0.78s fade out  (only top wave remains)
+        0.78–12.6s hidden
+        12.6–13s   fade in   (returns with top wave)
+      -->
+      <animate attributeName="opacity"
+        keyTimes="0; 0.03; 0.06; 0.97; 1"
+        values="1; 1; 0; 0; 1"
+        dur="13s" calcMode="linear" repeatCount="indefinite"/>
+    </path>
+
+    <!--
+      VyV LETTERFORM — a frozen wave.
+      The peaks and valleys of V–y–V mirror one period of the wave above.
+      Gradient applied left-to-right so left V = violet, right V = coral.
+    -->
+    <text id="vt"
+      x="100" y="46"
+      text-anchor="middle"
+      font-family="'Helvetica Neue', 'Arial Black', Helvetica, Arial, sans-serif"
+      font-size="38"
+      font-weight="900"
+      letter-spacing="-2"
+      fill="url(#gr)"
+      opacity="0">
+
+      <!--
+        Visibility cycle (13s):
+        0.0–1.17s  hidden    (wave phase)
+        1.17–1.56s fade in   (wave freezes into VyV)
+        1.56–12.6s visible   (11 seconds — the heartbeat rest)
+        12.6–13s   fade out  (water returns)
+      -->
+      <animate attributeName="opacity"
+        keyTimes="0; 0.09; 0.12; 0.97; 1"
+        values="0; 0; 1; 1; 0"
+        dur="13s" calcMode="linear" repeatCount="indefinite"/>
+    </text>
+
+  </g>
+</svg>
