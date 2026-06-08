@@ -244,8 +244,8 @@ sections:
 
   - block: cta-card
     content:
-      title: "Wanna see if we vibe?"
-      text: Fill out the form using the button below and I'll respond within 24 hours to set up a time for a remote meetup. No pitch. Just a real conversation about what you're looking for.
+      title: "Will we vibe though?"
+      text: Fill out the form using the button below and I'll respond within 24 hours so we can remote meetup. No pitch. Just a real conversation about what you're looking for. If we vibe cool. If not, all good.
       button:
         text: Connect now →
         url: "#connect"
