@@ -200,7 +200,7 @@ sections:
             <select name="persona" style="width:100%; border:1px solid #d1d5db; border-radius:0.5rem; padding:0.625rem 1rem; font-size:0.875rem; background:white; box-sizing:border-box;">
               <option value="">Select one…</option>
               <option>Remote worker / new to town</option>
-              <option>Life transition (divorce, new schedule, etc.)</option>
+              <option>Life in transition</option>
               <option>Older adult / looking for an active body double</option>
               <option>Just want company for activities</option>
             </select>
