@@ -18,7 +18,9 @@
 
 {{ $album := $content.album }}
 {{ $cols := $design.columns | default 3 }}
-{{ $allowed := slice ".jpg" ".jpeg" ".png" ".webp" }}
+{{/* .gif included so looping clips (bike ride, scuba) appear as animated tiles —
+     process_responsive_image passes GIFs through unprocessed, preserving animation. */}}
+{{ $allowed := slice ".jpg" ".jpeg" ".png" ".webp" ".gif" }}
 
 {{ $matches := slice }}
 {{ with $album }}
@@ -36,8 +38,13 @@
       {{/* Lightbox image — full, uncropped, aspect preserved */}}
       {{ $full := partial "functions/process_responsive_image.html" (dict
         "image" . "mode" "fit" "quality" 82 "sizes" (slice 768 1024 1366 1920)) }}
-      {{/* LQIP placeholder — 24px square webp, inlined */}}
-      {{ $lqip := (.Fill "24x24 webp q30 smart").Content | base64Encode }}
+      {{/* LQIP placeholder — 24px square webp, inlined. Skip for GIFs (a Fill
+           there would strip animation just to make a throwaway thumbnail). */}}
+      {{ $is_gif := eq .MediaType.SubType "gif" }}
+      {{ $lqip := "" }}
+      {{ if not $is_gif }}
+        {{ $lqip = printf "data:image/webp;base64,%s" ((.Fill "24x24 webp q30 smart").Content | base64Encode) }}
+      {{ end }}
       {{/* alt from humanised filename */}}
       {{ $base := path.Base .Name }}
       {{ $alt := humanize (replace (strings.TrimSuffix (path.Ext $base) $base) "-" " ") }}
@@ -47,7 +54,7 @@
         "full_src" $full.fallback.RelPermalink
         "full_srcset" $full.srcset
         "w" .Width "h" .Height
-        "lqip" (printf "data:image/webp;base64,%s" $lqip)
+        "lqip" $lqip
         "alt" $alt) }}
     {{ end }}
   {{ end }}
@@ -93,8 +100,10 @@
 
     <script>
     (function () {
-      var root = document.getElementById({{ printf "%s-lb" .wcIdentifier | jsonify }});
-      var data = JSON.parse(document.getElementById({{ printf "%s-data" .wcIdentifier | jsonify }}).textContent);
+      // safeJS so html/template doesn't re-wrap the JSON-quoted string in a JS context.
+      var ID = {{ .wcIdentifier | jsonify | safeJS }};
+      var root = document.getElementById(ID + '-lb');
+      var data = JSON.parse(document.getElementById(ID + '-data').textContent);
       var img = root.querySelector('.oki-lb-img');
       var count = root.querySelector('.oki-lb-count');
       var idx = 0;

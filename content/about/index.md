@@ -49,8 +49,8 @@ sections:
   - block: photo-grid
     id: gallery
     content:
-      title: "Nine frames"
-      subtitle: "Tiles are smart-cropped to square; click any one for the full photo."
+      title: "Frames &amp; motion"
+      subtitle: "A few of mine — click any tile to see it full size."
       # Pulls every image from assets/media/albums/oscar — drop new photos
       # in that folder and they appear here automatically (sorted by filename).
       album: media/albums/oscar
@@ -75,37 +75,6 @@ sections:
       css_class: "bg-white dark:bg-gray-950"
       spacing:
         padding: ["4rem", 0, "4rem", 0]
-
-  - block: markdown
-    id: in-motion
-    content:
-      title: "In motion"
-      subtitle: "Some things don't fit in a square. Sound on."
-      text: |
-        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1.25rem; max-width:56rem; margin:2rem auto 0;">
-          <figure style="margin:0;">
-            <video controls playsinline preload="metadata" muted loop
-                   style="width:100%; aspect-ratio:9/16; object-fit:cover; border-radius:0.75rem; background:#000;">
-              <source src="/media/dive-oki.mp4" type="video/mp4" />
-            </video>
-            <figcaption style="margin-top:0.5rem; font-size:0.85rem; opacity:0.65; text-align:center;">Scuba diving</figcaption>
-          </figure>
-          <!-- Bike-ride video slot: drop the file at static/media/bike-oki.mp4 and
-               uncomment the figure below. No bike video was in the source files yet. -->
-          <!--
-          <figure style="margin:0;">
-            <video controls playsinline preload="metadata" muted loop
-                   style="width:100%; aspect-ratio:9/16; object-fit:cover; border-radius:0.75rem; background:#000;">
-              <source src="/media/bike-oki.mp4" type="video/mp4" />
-            </video>
-            <figcaption style="margin-top:0.5rem; font-size:0.85rem; opacity:0.65; text-align:center;">Bike ride</figcaption>
-          </figure>
-          -->
-        </div>
-    design:
-      css_class: "bg-white dark:bg-gray-950"
-      spacing:
-        padding: ["3rem", 0, "4rem", 0]
 
   - block: cta-card
     content:
