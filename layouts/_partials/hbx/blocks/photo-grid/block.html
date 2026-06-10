@@ -1,0 +1,128 @@
+{{/*
+  photo-grid — project custom block (VYV "Who Is Oscar").
+
+  Why this exists instead of the stock `gallery` block: the stock gallery uses a
+  single "fit" (uncropped) image for BOTH the grid tile and the lightbox, then
+  squares the tile with CSS `object-cover` *center* crop — which beheads tall
+  portraits. Here the grid tile uses a composition-aware square crop (Hugo's
+  `fill … smart` saliency anchor) while the lightbox still shows the FULL,
+  aspect-correct original. Best of both.
+
+  Source: content.album — a folder under assets/, e.g. "media/albums/oscar".
+  Just drop new images in that folder; they appear automatically (name-sorted).
+*/}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content }}
+{{ $design := $block.design | default dict }}
+
+{{ $album := $content.album }}
+{{ $cols := $design.columns | default 3 }}
+{{ $allowed := slice ".jpg" ".jpeg" ".png" ".webp" }}
+
+{{ $matches := slice }}
+{{ with $album }}
+  {{ $matches = sort (resources.Match (printf "%s/*" (strings.TrimSuffix "/" .))) "Name" "asc" }}
+{{ end }}
+
+{{ $items := slice }}
+{{ range $matches }}
+  {{ if in $allowed (lower (path.Ext .Name)) }}
+    {{ if reflect.IsImageResourceProcessable . }}
+      {{/* Grid thumbnail — smart, composition-aware square crop */}}
+      {{ $thumb := partial "functions/process_responsive_image.html" (dict
+        "image" . "mode" "fill" "aspect_ratio" "1:1" "anchor" "smart"
+        "quality" 80 "sizes" (slice 400 600 800)) }}
+      {{/* Lightbox image — full, uncropped, aspect preserved */}}
+      {{ $full := partial "functions/process_responsive_image.html" (dict
+        "image" . "mode" "fit" "quality" 82 "sizes" (slice 768 1024 1366 1920)) }}
+      {{/* LQIP placeholder — 24px square webp, inlined */}}
+      {{ $lqip := (.Fill "24x24 webp q30 smart").Content | base64Encode }}
+      {{/* alt from humanised filename */}}
+      {{ $base := path.Base .Name }}
+      {{ $alt := humanize (replace (strings.TrimSuffix (path.Ext $base) $base) "-" " ") }}
+      {{ $items = $items | append (dict
+        "thumb_src" $thumb.fallback.RelPermalink
+        "thumb_srcset" $thumb.srcset
+        "full_src" $full.fallback.RelPermalink
+        "full_srcset" $full.srcset
+        "w" .Width "h" .Height
+        "lqip" (printf "data:image/webp;base64,%s" $lqip)
+        "alt" $alt) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+<div class="oki-grid-wrap">
+  {{ if or $content.title $content.subtitle }}
+    <div class="oki-grid-head">
+      {{ with $content.title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+      {{ with $content.subtitle }}<p>{{ . | markdownify }}</p>{{ end }}
+    </div>
+  {{ end }}
+
+  {{ if $items }}
+    <div class="oki-grid" style="--oki-cols: {{ $cols }}">
+      {{ range $i, $it := $items }}
+        <button type="button" class="oki-tile" data-oki-idx="{{ $i }}"
+                aria-label="Open photo: {{ $it.alt }}">
+          <span class="oki-lqip" style="{{ printf "background-image:url('%s')" $it.lqip | safeCSS }}" aria-hidden="true"></span>
+          <img src="{{ $it.thumb_src }}" srcset="{{ $it.thumb_srcset }}"
+               sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 360px"
+               loading="lazy" decoding="async" alt="{{ $it.alt }}" />
+        </button>
+      {{ end }}
+    </div>
+
+    {{/* Lightbox — native <dialog> (free Esc-close + focus trap), full images */}}
+    <dialog class="oki-lightbox" id="{{ .wcIdentifier }}-lb" aria-label="Photo viewer">
+      <button type="button" class="oki-lb-close" data-oki-close aria-label="Close">&times;</button>
+      <button type="button" class="oki-lb-nav oki-lb-prev" data-oki-prev aria-label="Previous photo">&#8249;</button>
+      <figure class="oki-lb-figure">
+        <img class="oki-lb-img" alt="" />
+        <figcaption class="oki-lb-count" aria-hidden="true"></figcaption>
+      </figure>
+      <button type="button" class="oki-lb-nav oki-lb-next" data-oki-next aria-label="Next photo">&#8250;</button>
+    </dialog>
+
+    <script type="application/json" id="{{ .wcIdentifier }}-data">
+      {{ $lb := slice }}
+      {{ range $items }}{{ $lb = $lb | append (dict "src" .full_src "srcset" .full_srcset "alt" .alt "w" .w "h" .h) }}{{ end }}
+      {{ $lb | jsonify | safeJS }}
+    </script>
+
+    <script>
+    (function () {
+      var root = document.getElementById({{ printf "%s-lb" .wcIdentifier | jsonify }});
+      var data = JSON.parse(document.getElementById({{ printf "%s-data" .wcIdentifier | jsonify }}).textContent);
+      var img = root.querySelector('.oki-lb-img');
+      var count = root.querySelector('.oki-lb-count');
+      var idx = 0;
+      function show(i) {
+        idx = (i + data.length) % data.length;
+        var d = data[idx];
+        img.src = d.src; img.srcset = d.srcset; img.sizes = '95vw';
+        img.alt = d.alt; img.width = d.w; img.height = d.h;
+        count.textContent = (idx + 1) + ' / ' + data.length;
+      }
+      function open(i) { show(i); if (!root.open) root.showModal(); }
+      function close() { if (root.open) root.close(); img.removeAttribute('src'); }
+      // Bind every tile in this block's grid (the dialog and grid share a parent wrap).
+      root.parentNode.querySelectorAll('.oki-tile').forEach(function (btn) {
+        btn.addEventListener('click', function () { open(parseInt(btn.dataset.okiIdx, 10)); });
+      });
+      root.querySelector('[data-oki-prev]').addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+      root.querySelector('[data-oki-next]').addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+      root.querySelector('[data-oki-close]').addEventListener('click', close);
+      root.addEventListener('click', function (e) { if (e.target === root) close(); }); // backdrop
+      root.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') { e.preventDefault(); show(idx - 1); }
+        else if (e.key === 'ArrowRight') { e.preventDefault(); show(idx + 1); }
+      });
+      root.addEventListener('close', function () { img.removeAttribute('src'); });
+    })();
+    </script>
+  {{ else }}
+    <p class="oki-grid-empty">No photos found in <code>{{ $album }}</code>.</p>
+  {{ end }}
+</div>

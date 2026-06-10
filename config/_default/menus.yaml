@@ -1,4 +1,7 @@
 main:
+  - name: Who Is Behind VYV?
+    url: /about/
+    weight: 5
   - name: Activities
     url: /#activities
     weight: 10
@@ -12,6 +15,10 @@ main:
 footer:
   - name: Navigate
     weight: 10
+  - parent: Navigate
+    name: Who Is Behind VYV?
+    url: /about/
+    weight: 5
   - parent: Navigate
     name: Activities
     url: /#activities

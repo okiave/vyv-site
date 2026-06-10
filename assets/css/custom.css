@@ -73,3 +73,153 @@ form textarea {
     padding-bottom: 6.472rem !important;
   }
 }
+
+/* ── Photo grid ("Who Is Oscar") ────────────────────────────────────────────
+   Smart-cropped square tiles (composition-aware crop happens at build time via
+   Hugo `fill … smart`); click opens a full-resolution, aspect-correct lightbox.
+   Plain CSS (no Tailwind dependency) — custom.css is loaded raw by the theme.
+   ─────────────────────────────────────────────────────────────────────────── */
+.oki-grid-wrap {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 3.5rem 1.25rem;
+}
+.oki-grid-head {
+  max-width: 42rem;
+  margin: 0 auto 2.25rem;
+  text-align: center;
+}
+.oki-grid-head h2 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+}
+.oki-grid-head p {
+  font-size: 1.075rem;
+  opacity: 0.7;
+  margin: 0;
+}
+.oki-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .oki-grid { grid-template-columns: repeat(var(--oki-cols, 3), minmax(0, 1fr)); gap: 1rem; }
+}
+.oki-tile {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 0;
+  padding: 0;
+  cursor: zoom-in;
+  background: rgba(0, 0, 0, 0.06);
+  isolation: isolate;
+}
+.oki-tile .oki-lqip {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  transform: scale(1.1);
+  z-index: 0;
+}
+.oki-tile img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  transition: transform 0.5s ease;
+}
+.oki-tile:hover img,
+.oki-tile:focus-visible img { transform: scale(1.05); }
+.oki-tile:focus-visible {
+  outline: 3px solid var(--color-primary-500, #f04e6e);
+  outline-offset: 2px;
+}
+
+/* Lightbox */
+.oki-lightbox {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.oki-lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(4px);
+}
+.oki-lightbox[open] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.oki-lb-figure {
+  margin: 0;
+  max-width: 95vw;
+  max-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.oki-lb-img {
+  max-width: 95vw;
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+}
+.oki-lb-count {
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  font-family: ui-monospace, monospace;
+  color: rgba(255, 255, 255, 0.75);
+}
+.oki-lb-close,
+.oki-lb-nav {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 9999px;
+  line-height: 1;
+  transition: background 0.2s ease;
+}
+.oki-lb-close:hover,
+.oki-lb-nav:hover { background: rgba(255, 255, 255, 0.25); }
+.oki-lb-close {
+  top: 1rem;
+  right: 1rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1.75rem;
+}
+.oki-lb-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  font-size: 2rem;
+}
+.oki-lb-prev { left: 1rem; }
+.oki-lb-next { right: 1rem; }
+@media (max-width: 640px) {
+  .oki-lb-nav { width: 2.5rem; height: 2.5rem; font-size: 1.5rem; }
+}
