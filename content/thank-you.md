@@ -12,7 +12,7 @@ sections:
     content:
       eyebrow: Got it · Gracias · Anchorage, AK
       title: "You're in. Let's [vamos]."
-      text: "Thanks for reaching out — your note just landed with me, Oscar. I read every form myself, so this isn't an auto-reply&#58; I'll be in touch within 24 hours on weekdays, or Monday if you sent it over the weekend. No pitch waiting on the other side. Just a real conversation about what you're looking for. Talk soon."
+      text: "Thanks for reaching out — your note just landed with me, Oscar. This isn't an auto-reply&#58; I read every form myself. I'll personally follow up with you within 72 hours to set up a time for us to meet over Zoom. No pitch waiting on the other side — just a real conversation about what you're looking for. Talk soon."
       primary_action:
         text: Back to home
         url: "/"
