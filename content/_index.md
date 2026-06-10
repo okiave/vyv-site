@@ -73,34 +73,34 @@ sections:
       text: Nine activities and counting. If it gets you moving, there's a good chance we're into it.
       items:
         - name: Swimming
-          icon: sun
+          icon: custom/swimming
           description: Open lanes at the pool or guided open-water sessions. Good for the body, great for the mind too — can feel meditative.
         - name: Roller Skating
-          icon: bolt
+          icon: custom/roller-skating
           description: Rink nights, trail skating, or just figuring out how to stay upright. All skill levels welcome.
         - name: Yoga
-          icon: sparkles
+          icon: custom/yoga
           description: "Studio sessions or outdoor flows. Bring whatever version of yourself showed up today. Let's get to know what practice and studio aligns with you."
         - name: Rock Climbing
-          icon: fire
+          icon: custom/rock-climbing
           description: "Bouldering or top-rope (within limits) — I'll spot you literally and figuratively."
         - name: Biking
-          icon: map
+          icon: custom/biking
           description: "Anchorage's trail system is spectacular. Let's ride it together or I can teach you basic maintenance at <a href=\"https://www.offthechainak.org/wordpress/\" target=\"_blank\" rel=\"noopener\">Off the Chain Bike CoOp</a> where I volunteer."
         - name: Dancing
-          icon: musical-note
+          icon: custom/dancing
           description: "Salsa, two-step, contra or just freestyle kitchen dancing — the point is to move, not to be perfect."
         - name: Visual Arts
-          icon: paint-brush
+          icon: custom/visual-arts
           description: "Origami, embroidery, sketching, photography — making things is good for the soul. We'll make creativity time a ritual."
         - name: Thrifting
-          icon: star
+          icon: custom/thrifting
           description: "Let's explore your sense of style and expression and don the outfit out for an event or gathering."
         - name: Hiking
-          icon: flag
+          icon: custom/hiking
           description: "Chugach trails from chill to gnarly. We go at your pace. Mountain runners need not apply."
     design:
-      layout: bento
+      layout: grid
       css_class: "bg-gray-50 dark:bg-gray-900/50"
 
   - block: cta-image-paragraph
