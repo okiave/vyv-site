@@ -138,7 +138,7 @@ sections:
       title: Ready to vamos?
       subtitle: Fill this out. I'll be in touch within 24 hours.
       text: |
-        <form name="vyv-lead" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="mt-8 space-y-6 max-w-2xl mx-auto text-left">
+        <form name="vyv-lead" method="POST" action="/thank-you/" data-netlify="true" netlify-honeypot="bot-field" class="mt-8 space-y-6 max-w-2xl mx-auto text-left">
           <input type="hidden" name="form-name" value="vyv-lead" />
           <p style="display:none"><input name="bot-field" /></p>
 
