@@ -46,24 +46,30 @@ form textarea {
 }
 
 /* ── Mobile spacing ─────────────────────────────────────────────────────────
-   Trim the generous section gaps on small screens — 2/3 reduction above
-   and below key sections.
+   Section rhythm on small screens (verified at iPhone 15 · 393×852).
+   Scaled one golden-ratio step (φ ≈ 1.618) up from the previous values so the
+   sections breathe without losing the tightened feel:
+     2rem × φ ≈ 3.236rem (≈52px)   ·   4rem × φ ≈ 6.472rem (≈104px)
    ─────────────────────────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   #how-it-works {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+    padding-top: 3.236rem !important;
+    padding-bottom: 3.236rem !important;
   }
   #activities {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+    padding-top: 3.236rem !important;
+    padding-bottom: 3.236rem !important;
   }
   #who {
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
+    padding-top: 3.236rem !important;
+    padding-bottom: 3.236rem !important;
+  }
+  #connect {
+    padding-top: 6.472rem !important;
+    padding-bottom: 6.472rem !important;
   }
   #faq {
-    padding-top: 2rem !important;
-    padding-bottom: 4rem !important;
+    padding-top: 3.236rem !important;
+    padding-bottom: 6.472rem !important;
   }
 }
