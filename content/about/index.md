@@ -61,11 +61,9 @@ sections:
   - block: markdown
     id: story
     content:
-      title: "The short version"
+      title: "Hi, I'm Oscar 👋"
       subtitle: ""
       text: |
-        Hi, I'm Oscar 👋
-
         I grew up in Alaska when Alaska still felt like a place where who you knew shaped everything — your weekends, your summer, your sense of what was possible in the depths of winter. That's not nostalgia. It's a reference point.
 
         Over the years I've worked as a [photographer](https://okiave.com), a [storyteller](https://www.youtube.com/watch?v=zL31v-pFHNM), an [IT person](https://helper.okiave.com/services/digital-life-helper/), and [someone who helps organizations hold together when things get complicated](https://hello.okiave.com). Good work, all of it. But somewhere along the way I noticed something: the more connected our tools got, the less connected the people seemed. Not just at work — everywhere.
