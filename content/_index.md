@@ -8,7 +8,7 @@ sections:
     content:
       eyebrow: Hello · Hola · Anchorage, AK
       title: "Your [vibe] deserves a real [partner]."
-      text: VYV is one person — me, Oscar — available, invested, and good at this. I built it because I kept seeing the same gap&#58; people who want to move, reconnect, or try something new, but no one to do it with. If that's you, let's fix that.
+      text: VyV is one person — me, Oscar — available, invested, and good at this. I built it because I kept seeing the same gap&#58; people who want to move, reconnect, or try something new, but no one to do it with. If that's you, let's fix that.
       primary_action:
         text: Let's connect
         url: "#connect"
@@ -108,7 +108,7 @@ sections:
     content:
       items:
         - title: "Too much screen time? I know that feeling."
-          text: Anchorage is spectacular and surprisingly hard to break into, so screen time becomes the default. I built VYV partly because I've been that person — wanting to get out and do things, but not knowing anyone who was actually free. That gap doesn't have to be yours.
+          text: Anchorage is spectacular and surprisingly hard to break into, so screen time becomes the default. I built VyV partly because I've been that person — wanting to get out and do things, but not knowing anyone who was actually free. That gap doesn't have to be yours.
           feature_icon: check
           features:
             - "Local knowledge, genuine enthusiasm"
@@ -119,7 +119,7 @@ sections:
             text: Let's connect
             url: "#connect"
         - title: "Life shifted. Your rhythm can too."
-          text: Transitions have a way of clearing the calendar without asking. VYV isn't therapy and it isn't a fix — it's someone reliable to move alongside you. I show up to hold space with presence for what's already seeking to emerge through a process of companionship. Like a water lily just beneath the surface&#58; you need the right conditions to breakthrough.
+          text: Transitions have a way of clearing the calendar without asking. VyV isn't therapy and it isn't a fix — it's someone reliable to move alongside you. I show up to hold space with presence for what's already seeking to emerge through a process of companionship. Like a water lily just beneath the surface&#58; you need the right conditions to breakthrough.
           feature_icon: heart
           features:
             - "No judgment, no pressure, no weird vibes"
@@ -223,18 +223,18 @@ sections:
       title: "Questions? Fair."
       subtitle: Here's what people usually ask.
       items:
-        - question: What Exactly is VYV?
+        - question: What Exactly is VyV?
           answer: |
-            VYV stands for Vibe & Vamos — vibes and let's go. It's me — Oscar or Oki, if you've gotten to know me and my spirited sense of play disposition. I'm a [change management consultant](https://hello.okiave.com) and [visual artist](https://okiave.com) who built this because I kept seeing the same gap: people wanting to get active and connected, but no reliable, interesting person to do it with. So I became that person. Activity companion. Presence holder. Someone who shows up. I'm currently based in Anchorage, AK and branching out to Austin, TX area.
+            VyV stands for Vibe & Vamos — vibes and let's go. It's me — Oscar or Oki, if you've gotten to know me and my spirited sense of play disposition. I'm a [change management consultant](https://hello.okiave.com) and [visual artist](https://okiave.com) who built this because I kept seeing the same gap: people wanting to get active and connected, but no reliable, interesting person to do it with. So I became that person. Activity companion. Presence holder. Someone who shows up. I'm currently based in Anchorage, AK and branching out to Austin, TX area.
         - question: Is this a dating service?
           answer: |
-            No. This is an activity companion service. VYV is about movement, genuine connection, and having a good time doing things — not romance. If that's what you're looking for, you've got Tinder and other platforms to explore.
+            No. This is an activity companion service. VyV is about movement, genuine connection, and having a good time doing things — not romance. If that's what you're looking for, you've got Tinder and other platforms to explore.
         - question: How does pricing work?
           answer: |
             Currently, rates are based on activity type. Use the form above to connect and we'll work out what makes sense for your situation. No rigid packages, no surprise fees.
         - question: What if I've never done the activity before?
           answer: |
-            That's kind of the point. We're all beginners at something in life. VYV is about trying things and getting moving, not performing expertise. Think of it as a way to nurture a new hobby, skill or habit you want to practice.
+            That's kind of the point. We're all beginners at something in life. VyV is about trying things and getting moving, not performing expertise. Think of it as a way to nurture a new hobby, skill or habit you want to practice.
         - question: Where in Anchorage do you operate?
           answer: |
             Most activities happen within Anchorage proper — Midtown, South Addition and the Coastal Trail area. Photo walks and hiking experiences go as far as Turnagain and Palmer, AK.

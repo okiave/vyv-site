@@ -1,6 +1,6 @@
 ---
-title: 'Who Is Behind VYV?'
-description: "The person behind VYV — Oscar (Oki). A few frames and the short version."
+title: 'Hi. I''m Oscar.'
+description: "The person behind VyV — Oscar (Oki). A few frames and the short version."
 date: 2026-06-10
 type: landing
 
@@ -62,15 +62,19 @@ sections:
     id: story
     content:
       title: "The short version"
-      subtitle: "Placeholder copy — about a 20-second read. Swap in real words when you're ready."
+      subtitle: ""
       text: |
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        I grew up in Alaska when Alaska still felt like a place where who you knew shaped everything — your weekends, your summer, your sense of what was possible in the depths of winter. That's not nostalgia. It's a reference point.
+
+        Over the years I've worked as a photographer, a storyteller, an IT person, and someone who helps organizations hold together when things get complicated. Good work, all of it. But somewhere along the way I noticed something: the more connected our tools got, the less connected the people seemed. Not just at work — everywhere.
+
+        VyV is my attempt to do something about that.
+
+        The idea is one-on-one activities, chosen to match where you are — your interests, your comfort level, your pace. Not a class. Not therapy. Just a real reason to get out, try something new, and spend time with someone who's genuinely paying attention. A little novelty. A little serendipity. The kind of afternoon that quietly changes how ordinary life feels.
+
+        The longer hope is that it becomes something more. That you meet someone through VyV and later run into them at the farmers market, or recognize them in the elevator at work, and actually have something to say. That one afternoon becomes a thread in something larger.
+
+        Alaska taught me that the people make the place. Let me show you what is possible.
     design:
       css_class: "bg-white dark:bg-gray-950"
       spacing:
