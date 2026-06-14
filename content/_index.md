@@ -7,8 +7,8 @@ sections:
   - block: hero
     content:
       eyebrow: Hello · Hola · Anchorage, AK
-      title: "Your [vibe] deserves a real [partner]."
-      text: VyV is one person — me, Oscar — available, invested, and good at this. I built it because I kept seeing the same gap&#58; people who want to move, reconnect, or try something new, but no one to do it with. If that's you, let's fix that.
+      title: "Motion is the medicine."
+      text: "Presence is the practice."
       primary_action:
         text: Let's connect
         url: "#connect"
