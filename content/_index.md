@@ -241,6 +241,18 @@ sections:
         - question: How quickly will you follow up?
           answer: |
             Within 24 hours on weekdays. If you submit over the weekend, expect a Monday reply. No auto-responder — I read every form.
+        - question: Are you a Facebook hiking group?
+          answer: |
+            Nope — just me, Oscar. VyV is one person, not a group page or a club. That said, if you're after accessible group hikes in South Central, I'd point you to <a href="https://www.facebook.com/share/g/1ERqniFBEY/?mibextid=wwXIfr" target="_blank" rel="noopener">Happy Hikers</a> — they meet every Wednesday and are a great crew. I'm also happy to tag along with you and whoever you bring.
+        - question: I'm not really an active person, but I'd love company for coffee or food. Is that something you do?
+          answer: |
+            Absolutely. Food is how people actually connect — and I'm pretty adventurous about cuisine: 🌮🍜🍛🥙🥟 and anything I haven't tried yet. I'll even dress up and go somewhere with real ambiance if that's your thing. Low pressure, good company, great meal.
+        - question: I'm an introvert and don't need a lot of talking. Can we just share space and work on something quietly?
+          answer: |
+            Completely. I'm an artist — I embroider and do origami — and I genuinely love the quiet that settles in when you're deep in a craft. No pressure to fill the silence. We could share space at the <a href="https://consortiumlibrary.org/" target="_blank" rel="noopener">UAA Library</a>, the <a href="https://www.anchoragemuseum.org/" target="_blank" rel="noopener">Anchorage Museum</a>, or a coworking spot like <a href="https://akelaspace.com/" target="_blank" rel="noopener">Akela</a> or <a href="https://coworkbyrsd.com/" target="_blank" rel="noopener">Cowork by RSD</a>. Or somewhere you already feel at home.
+        - question: I keep procrastinating. Could you sit with me as an accountability partner for a stretch?
+          answer: |
+            Yes. Whether it's studying for an exam or finally getting through that pile of paperwork — I'm good at sitting alongside someone who needs an accountability anchor. We can treat our time as a light co-working sprint: map out what you want to get through, then I'm right there while you work. Sometimes just not being alone with the task is the whole thing.
 
   - block: cta-card
     content:
