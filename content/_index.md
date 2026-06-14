@@ -195,15 +195,29 @@ sections:
             </div>
           </div>
 
-          <div>
-            <label style="display:block; font-size:0.875rem; font-weight:500; margin-bottom:0.25rem;">What's your situation?</label>
-            <select name="persona" style="width:100%; border:1px solid #d1d5db; border-radius:0.5rem; padding:0.625rem 1rem; font-size:0.875rem; background:white; box-sizing:border-box;">
-              <option value="">Select one…</option>
-              <option>Remote worker / new to town</option>
-              <option>Life in transition</option>
-              <option>Older adult / looking for an active body double</option>
-              <option>Just want company for activities</option>
-            </select>
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+            <div>
+              <label style="display:block; font-size:0.875rem; font-weight:500; margin-bottom:0.25rem;">What's your situation?</label>
+              <select name="persona" style="width:100%; border:1px solid #d1d5db; border-radius:0.5rem; padding:0.625rem 1rem; font-size:0.875rem; background:white; box-sizing:border-box;">
+                <option value="">Select one…</option>
+                <option>Remote worker / new to Anchorage</option>
+                <option>Work non-traditional hours</option>
+                <option>Life in transition</option>
+                <option>Older adult / looking for an active body double</option>
+                <option>Just want company for activities</option>
+              </select>
+            </div>
+            <div>
+              <label style="display:block; font-size:0.875rem; font-weight:500; margin-bottom:0.25rem;">What are you after?</label>
+              <select name="intent" style="width:100%; border:1px solid #d1d5db; border-radius:0.5rem; padding:0.625rem 1rem; font-size:0.875rem; background:white; box-sizing:border-box;">
+                <option value="">Select one…</option>
+                <option>A walk or getting outside</option>
+                <option>Coffee or a meal</option>
+                <option>A night out</option>
+                <option>An activity partner</option>
+                <option>An accountability buddy</option>
+              </select>
+            </div>
           </div>
 
           <div>
