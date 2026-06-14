@@ -119,7 +119,7 @@ sections:
             text: Let's connect
             url: "#connect"
         - title: "Life shifted. Your rhythm can too."
-          text: Transitions have a way of clearing the calendar without asking. VyV isn't therapy and it isn't a fix — it's someone reliable to move alongside you. I show up to hold space with presence for what's already seeking to emerge through a process of companionship. Like a water lily just beneath the surface&#58; you need the right conditions to breakthrough.
+          text: Transitions have a way of clearing the calendar without asking. VyV isn't therapy and it isn't a fix — it's someone reliable to move alongside you. I show up to hold space with presence for what's already seeking to emerge through a process of companionship. Like a water lily 🪷 just beneath the surface&#58; you need the right conditions to breakthrough.
           feature_icon: heart
           features:
             - "No judgment, no pressure, no weird vibes"
